@@ -1,22 +1,104 @@
 html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
     font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f5f3ef; /* soft warm cream */
+    color: #222; /* readable dark gray (almost black) */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
+
+/* Navbar */
+.navbar {
+    background-color: #2f2f2f; /* deep gray */
+    border-bottom: 2px solid #d4af37; /* gold accent */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #d4af37; /* luxury gold */
+    font-size: 1.3rem;
+}
+
+.navbar a {
+    color: #f5f3ef;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+    .navbar a:hover {
+        color: #d4af37;
+    }
+
+/* Buttons */
+.btn {
+    background-color: #d4af37; /* gold */
+    color: #222; /* readable text */
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+    .btn:hover {
+        background-color: #b8902c;
+        color: #fff;
+    }
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    color: #1c1c1c; /* strong dark text */
+    margin-bottom: 20px;
+}
+
+/* Card containers */
+.card {
+    background: #ffffff;
+    border: 1px solid #e1dfdb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    table th {
+        background: #2f2f2f;
+        color: #d4af37;
+        font-weight: 600;
+        padding: 12px;
+        border-bottom: 2px solid #444;
+    }
+
+    table td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        color: #222;
+    }
+
+    table tr:hover {
+        background: #f0ece6; /* subtle cream hover */
+    }
+
+/* Links */
+a {
+    color: #2f2f2f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    a:hover {
+        color: #d4af37;
+    }

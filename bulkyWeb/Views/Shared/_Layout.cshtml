@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/bulkyWeb.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">bulkyWeb</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -22,6 +24,11 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
@@ -36,11 +43,39 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - bulkyWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer style="
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color:#2f2f2f; 
+    color:#d4af37; 
+    padding:15px 0; 
+    border-top:2px solid #d4af37; 
+    text-align:center;
+    z-index: 1000;
+">
+    &copy; 2025 - <span style="font-weight:bold; color:#f5f3ef;">bulkyWeb</span> - 
+    <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color:#f5f3ef; text-decoration:none; transition:color 0.3s;" 
+       onmouseover="this.style.color='#d4af37';" onmouseout="this.style.color='#f5f3ef';">Privacy</a>
+</footer>
+    <footer style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#2f2f2f;
+    color:#d4af37;
+    padding:15px 0;
+    border-top:2px solid #d4af37;
+    text-align:center;
+    z-index: 1000;
+">
+        &copy; 2025 - <span style="font-weight:bold; color:#f5f3ef;">bulkyWeb</span> -
+        <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color:#f5f3ef; text-decoration:none; transition:color 0.3s;"
+           onmouseover="this.style.color='#d4af37';" onmouseout="this.style.color='#f5f3ef';">Privacy</a>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
